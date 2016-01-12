@@ -18,5 +18,6 @@ exports.whoami = function(req, res, next) {
     var software = req.headers['user-agent'].substring(fromIdx, toIdx);
     
     // sending response to user
-    res.send({ipaddress: ip, language: language, software: software});
+    var data = {ipaddress: ip, language: language, software: software}
+    res.json(data);
 };
