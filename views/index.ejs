@@ -2,11 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Request Header Parser Microservice</title>
+    <title><%- title %></title>
     <meta name="author" content="Suraj B Malode(helios0x92)">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="/public/css/main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <div class="container">
@@ -14,22 +15,24 @@
         <div class="col-xs-12">
           <div class="jumbotron">
             <h1><%= title %></h1>
-            <p>A microservice where the user can get the their IP address, language and operating system information</p>
+            <p>A microservice where the user can get the IP address, language and operating system for their browser.</p>
+            <p><a class="btn btn-primary btn-lg" href="https://request-header-parser-uc-ms.herokuapp.com/api/whoami" role="button">Try Now &raquo;</a></p>
           </div>   
           
             <h3>Usage:</h3>
             <div class="well well-sm">
-              <p class="text-danger">Go to <a class="text-danger" href='/whoami'>https://request-header-parser-uc-ms.herokuapp.com/whoami</a>
+              <code><p class="text-danger">Go to <a class="text-danger" href='/whoami'>https://request-header-parser-uc-ms.herokuapp.com/api/whoami</a></code>
               </p>
             </div>
             <h3>Example output:</h3>
             <div class="well well-sm">
               <p class="text-danger">
-            {"ipaddress":"99.999.999.999","language":"en-US","software":"Windows NT 10.0; WOW64"}
+            <code>{"ipaddress":"106.221.150.217","language":"en-US","software":"Macintosh; Intel Mac OS X 10_11_2"}</code>
               </p>
             </div>
         </div>
       </div>
     </div>
+    
   </body>
 </html>
